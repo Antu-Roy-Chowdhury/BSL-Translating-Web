@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}সাইন - বাংলা সাইন ট্রান্সলেটর{% endblock %}
+
+{% block content %}
+<section class="sign-gallery-section">
+    <div class="container">
+        <h2 class="section-title">বাংলা সাইন ভাষা গ্যালারি</h2>
+        <p class="section-description">নিচে বাংলা সাইন ভাষার সমস্ত ৪৫টি চিহ্ন এবং তাদের অর্থ দেখুন। প্রতিটি চিহ্নের উপর ক্লিক করে আরও বিস্তারিত জানুন।</p>
+        
+        <div class="sign-gallery">
+            {% for label, data in signs.items() %}
+            <div class="sign-card" data-label="{{ label }}">
+                <div class="sign-image">
+                    <img src="../static/images/signs/Image_{{ label }}.jpg" alt="{{ data.bangla }}">
+                </div>
+                <div class="sign-info">
+                    <h3>{{ data.bangla }}</h3>
+                    <p>{{ label }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<div id="sign-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img id="modal-sign-image" src="/placeholder.svg" alt="">
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-sign-title"></h2>
+                <p id="modal-sign-label"></p>
+                <p id="modal-sign-description"></p>
+                <button id="modal-speak-btn" class="btn btn-secondary">
+                    <i class="fas fa-volume-up"></i> উচ্চারণ করুন
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/sign-gallery.js') }}"></script>
+{% endblock %}

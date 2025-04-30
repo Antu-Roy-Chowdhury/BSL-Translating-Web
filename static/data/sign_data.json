@@ -1,0 +1,227 @@
+{
+  "0": {
+    "bangla": "০",
+    "image": "../static/images/signs/Image_0.jpg",
+    "description": "Sign for ০"
+  },
+  "1": {
+    "bangla": "১",
+    "image": "../static/images/signs/Image_1.jpg",
+    "description": "Sign for ১"
+  },
+  "2": {
+    "bangla": "২",
+    "image": "../static/images/signs/Image_2.jpg",
+    "description": "Sign for ২"
+  },
+  "3": {
+    "bangla": "৩",
+    "image": "../static/images/signs/Image_3.jpg",
+    "description": "Sign for ৩"
+  },
+  "4": {
+    "bangla": "৪",
+    "image": "../static/images/signs/Image_4.jpg",
+    "description": "Sign for ৪"
+  },
+  "5": {
+    "bangla": "৫",
+    "image": "../static/images/signs/Image_5.jpg",
+    "description": "Sign for ৫"
+  },
+  "6": {
+    "bangla": "৬",
+    "image": "../static/images/signs/Image_6.jpg",
+    "description": "Sign for ৬"
+  },
+  "7": {
+    "bangla": "৭",
+    "image": "../static/images/signs/Image_7.jpg",
+    "description": "Sign for ৭"
+  },
+  "8": {
+    "bangla": "৮",
+    "image": "../static/images/signs/Image_8.jpg",
+    "description": "Sign for ৮"
+  },
+  "9": {
+    "bangla": "৯",
+    "image": "../static/images/signs/Image_9.jpg",
+    "description": "Sign for ৯"
+  },
+  "o": {
+    "bangla": "অ",
+    "image": "../static/images/signs/Image_o.jpg",
+    "description": "Sign for অ"
+  },
+  "a": {
+    "bangla": "আ",
+    "image": "../static/images/signs/Image_a.jpg",
+    "description": "Sign for আ"
+  },
+  "i": {
+    "bangla": "ই",
+    "image": "../static/images/signs/Image_i.jpg",
+    "description": "Sign for ই"
+  },
+  "u": {
+    "bangla": "উ",
+    "image": "../static/images/signs/Image_u.jpg",
+    "description": "Sign for উ"
+  },
+  "e": {
+    "bangla": "এ",
+    "image": "../static/images/signs/Image_e.jpg",
+    "description": "Sign for এ"
+  },
+  "oo": {
+    "bangla": "ও",
+    "image": "../static/images/signs/Image_oo.jpg",
+    "description": "Sign for ও"
+  },
+  "k": {
+    "bangla": "ক",
+    "image": "../static/images/signs/Image_k.jpg",
+    "description": "Sign for ক"
+  },
+  "kh": {
+    "bangla": "খ",
+    "image": "../static/images/signs/Image_kh.jpg",
+    "description": "Sign for খ"
+  },
+  "g": {
+    "bangla": "গ",
+    "image": "../static/images/signs/Image_g.jpg",
+    "description": "Sign for গ"
+  },
+  "gh": {
+    "bangla": "ঘ",
+    "image": "../static/images/signs/Image_gh.jpg",
+    "description": "Sign for ঘ"
+  },
+  "c": {
+    "bangla": "চ",
+    "image": "../static/images/signs/Image_c.jpg",
+    "description": "Sign for চ"
+  },
+  "ch": {
+    "bangla": "ছ",
+    "image": "../static/images/signs/Image_ch.jpg",
+    "description": "Sign for ছ"
+  },
+  "j": {
+    "bangla": "জ",
+    "image": "../static/images/signs/Image_j.jpg",
+    "description": "Sign for জ"
+  },
+  "jh": {
+    "bangla": "ঝ",
+    "image": "../static/images/signs/Image_jh.jpg",
+    "description": "Sign for ঝ"
+  },
+  "t": {
+    "bangla": "ট",
+    "image": "../static/images/signs/Image_t.jpg",
+    "description": "Sign for ট"
+  },
+  "th": {
+    "bangla": "ঠ",
+    "image": "../static/images/signs/Image_th.jpg",
+    "description": "Sign for ঠ"
+  },
+  "d": {
+    "bangla": "ড",
+    "image": "../static/images/signs/Image_d.jpg",
+    "description": "Sign for ড"
+  },
+  "dh": {
+    "bangla": "ঢ",
+    "image": "../static/images/signs/Image_dh.jpg",
+    "description": "Sign for ঢ"
+  },
+  "to": {
+    "bangla": "ত",
+    "image": "../static/images/signs/Image_to.jpg",
+    "description": "Sign for ত"
+  },
+  "tho": {
+    "bangla": "থ",
+    "image": "../static/images/signs/Image_tho.jpg",
+    "description": "Sign for থ"
+  },
+  "do": {
+    "bangla": "দ",
+    "image": "../static/images/signs/Image_do.jpg",
+    "description": "Sign for দ"
+  },
+  "dho": {
+    "bangla": "ধ",
+    "image": "../static/images/signs/Image_dho.jpg",
+    "description": "Sign for ধ"
+  },
+  "n": {
+    "bangla": "ন",
+    "image": "../static/images/signs/Image_n.jpg",
+    "description": "Sign for ন"
+  },
+  "p": {
+    "bangla": "প",
+    "image": "../static/images/signs/Image_p.jpg",
+    "description": "Sign for প"
+  },
+  "f": {
+    "bangla": "ফ",
+    "image": "../static/images/signs/Image_f.jpg",
+    "description": "Sign for ফ"
+  },
+  "b": {
+    "bangla": "ব",
+    "image": "../static/images/signs/Image_b.jpg",
+    "description": "Sign for ব"
+  },
+  "v": {
+    "bangla": "ভ",
+    "image": "../static/images/signs/Image_v.jpg",
+    "description": "Sign for ভ"
+  },
+  "m": {
+    "bangla": "ম",
+    "image": "../static/images/signs/Image_m.jpg",
+    "description": "Sign for ম"
+  },
+  "y": {
+    "bangla": "য়",
+    "image": "../static/images/signs/Image_y.jpg",
+    "description": "Sign for য়"
+  },
+  "r": {
+    "bangla": "র",
+    "image": "../static/images/signs/Image_r.jpg",
+    "description": "Sign for র"
+  },
+  "s": {
+    "bangla": "স",
+    "image": "../static/images/signs/Image_s.jpg",
+    "description": "Sign for স"
+  },
+  "h": {
+    "bangla": "হ",
+    "image": "../static/images/signs/Image_h.jpg",
+    "description": "Sign for হ"
+  },
+  "rh": {
+    "bangla": "ড়",
+    "image": "../static/images/signs/Image_rh.jpg",
+    "description": "Sign for ড়"
+  },
+  "ng": {
+    "bangla": "অনুস্বার",
+    "image": "../static/images/signs/Image_ng.jpg",
+    "description": "Sign for অনুস্বার"
+  },
+  "bisrg": {
+    "bangla": "বিসর্গ",
+    "image": "../static/images/signs/Image_bisrg.jpg",
+    "description": "Sign for বিসর্গ"
+  }
+}

@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block title %}সম্পর্কে - বাংলা সাইন ট্রান্সলেটর{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <div class="container">
+        <h2 class="section-title">প্রকল্প সম্পর্কে</h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p>বাংলা সাইন ট্রান্সলেটর একটি AI-ভিত্তিক প্রকল্প যা বাংলা সাইন ভাষাকে বাংলা টেক্সটে অনুবাদ করতে সাহায্য করে। এই প্রকল্পটি বধির সম্প্রদায় এবং সাধারণ মানুষের মধ্যে যোগাযোগের বাধা দূর করার লক্ষ্যে তৈরি করা হয়েছে।</p>
+                
+                <p>আমাদের সিস্টেম কম্পিউটার ভিশন এবং ডিপ লার্নিং ব্যবহার করে সাইন ভাষা চিহ্নগুলি চিনতে এবং সেগুলিকে বাংলা অক্ষরে অনুবাদ করতে পারে। এটি রিয়েল-টাইমে কাজ করে এবং ৪৫টি বিভিন্ন সাইন চিনতে পারে।</p>
+                
+                <p>এই প্রকল্পটি একটি মুক্ত উৎস প্রকল্প এবং GitHub-এ উপলব্ধ। আপনি নিচের লিঙ্কে গিয়ে প্রকল্পটি দেখতে এবং অবদান রাখতে পারেন।</p>
+                
+                <div class="github-link">
+                    <a href="https://github.com/yourusername/bangla-sign-translator" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> GitHub-এ দেখুন
+                    </a>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/about-image.jpg') }}" alt="Project Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="model-section">
+    <div class="container">
+        <h2 class="section-title">মডেল সম্পর্কে</h2>
+        
+        <div class="model-content">
+            <div class="model-info">
+                <h3>টেকনিক্যাল বিবরণ</h3>
+                <p>আমাদের সাইন ভাষা ট্রান্সলেটর নিম্নলিখিত প্রযুক্তি ব্যবহার করে:</p>
+                
+                <ul class="tech-list">
+                    <li><strong>TensorFlow/Keras:</strong> ডিপ লার্নিং মডেল তৈরি এবং প্রশিক্ষণের জন্য</li>
+                    <li><strong>OpenCV:</strong> ভিডিও প্রসেসিং এবং হ্যান্ড ট্র্যাকিংয়ের জন্য</li>
+                    <li><strong>CVZone:</strong> হ্যান্ড ডিটেকশন এবং ট্র্যাকিংয়ের জন্য</li>
+                    <li><strong>Flask:</strong> ওয়েব অ্যাপ্লিকেশন ডেভেলপমেন্টের জন্য</li>
+                </ul>
+                
+                <h3>মডেল আর্কিটেকচার</h3>
+                <p>আমাদের মডেল একটি কনভলিউশনাল নিউরাল নেটওয়ার্ক (CNN) ব্যবহার করে যা ৪৫টি বিভিন্ন সাইন ভাষা চিহ্ন চিনতে প্রশিক্ষিত। মডেলটি ৯৫% এরও বেশি সঠিকতার সাথে সাইন চিনতে পারে।</p>
+                
+                <div class="model-architecture">
+                    <img src="{{ url_for('static', filename='images/model-architecture.jpg') }}" alt="Model Architecture">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dataset-section">
+    <div class="container">
+        <h2 class="section-title">ডেটাসেট</h2>
+        
+        <div class="dataset-content">
+            <p>আমাদের মডেল প্রশিক্ষণের জন্য আমরা বাংলা সাইন ভাষার ৪৫টি বিভিন্ন চিহ্নের ১০,০০০+ ছবি সংগ্রহ করেছি। ডেটাসেটটি বিভিন্ন আলো, কোণ এবং ব্যক্তিদের সাইন দিয়ে সমৃদ্ধ করা হয়েছে।</p>
+            
+            <div class="dataset-samples">
+                <h3>ডেটাসেট নমুনা</h3>
+                
+                <div class="sample-images">
+                    <div class="sample-image">
+                        <img src="{{ url_for('static', filename='images/dataset-sample1.jpg') }}" alt="Dataset Sample 1">
+                    </div>
+                    <div class="sample-image">
+                        <img src="{{ url_for('static', filename='images/dataset-sample2.jpg') }}" alt="Dataset Sample 2">
+                    </div>
+                    <div class="sample-image">
+                        <img src="{{ url_for('static', filename='images/dataset-sample3.jpg') }}" alt="Dataset Sample 3">
+                    </div>
+                    <div class="sample-image">
+                        <img src="{{ url_for('static', filename='images/dataset-sample4.jpg') }}" alt="Dataset Sample 4">
+                    </div>
+                </div>
+                
+                <h3>ডেটা অগমেন্টেশন</h3>
+                <p>মডেলের সঠিকতা বাড়ানোর জন্য আমরা বিভিন্ন ডেটা অগমেন্টেশন কৌশল ব্যবহার করেছি, যেমন:</p>
+                
+                <ul>
+                    <li>ঘোরানো (Rotation)</li>
+                    <li>জুম (Zoom)</li>
+                    <li>উজ্জ্বলতা পরিবর্তন (Brightness variation)</li>
+                    <li>কন্ট্রাস্ট পরিবর্তন (Contrast variation)</li>
+                </ul>
+                
+                <div class="augmentation-samples">
+                    <div class="augmentation-sample">
+                        <img src="{{ url_for('static', filename='images/augmentation1.jpg') }}" alt="Augmentation Sample 1">
+                        <p>মূল ছবি</p>
+                    </div>
+                    <div class="augmentation-sample">
+                        <img src="{{ url_for('static', filename='images/augmentation2.jpg') }}" alt="Augmentation Sample 2">
+                        <p>ঘোরানো</p>
+                    </div>
+                    <div class="augmentation-sample">
+                        <img src="{{ url_for('static', filename='images/augmentation3.jpg') }}" alt="Augmentation Sample 3">
+                        <p>জুম</p>
+                    </div>
+                    <div class="augmentation-sample">
+                        <img src="{{ url_for('static', filename='images/augmentation4.jpg') }}" alt="Augmentation Sample 4">
+                        <p>উজ্জ্বলতা পরিবর্তন</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-section">
+    <div class="container">
+        <h2 class="section-title">আমাদের টিম</h2>
+        
+        <div class="team-members">
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/team-member1.jpg') }}" alt="Team Member 1">
+                </div>
+                <h3>নাম পরিবর্তন করুন</h3>
+                <p>প্রকল্প লিড</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/team-member2.jpg') }}" alt="Team Member 2">
+                </div>
+                <h3>নাম পরিবর্তন করুন</h3>
+                <p>AI ডেভেলপার</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="{{ url_for('static', filename='images/team-member3.jpg') }}" alt="Team Member 3">
+                </div>
+                <h3>নাম পরিবর্তন করুন</h3>
+                <p>ফুল-স্ট্যাক ডেভেলপার</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

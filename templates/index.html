@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}হোম - বাংলা সাইন ট্রান্সলেটর{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2>বাংলা সাইন ভাষা শিখুন এবং যোগাযোগ করুন</h2>
+            <p>আমাদের অত্যাধুনিক সাইন ভাষা ট্রান্সলেটর ব্যবহার করে বাংলা সাইন ভাষা শিখুন এবং বধির সম্প্রদায়ের সাথে সহজে যোগাযোগ করুন। আমাদের AI-ভিত্তিক সিস্টেম সাইন ভাষা চিনতে এবং বাংলা অক্ষরে অনুবাদ করতে সাহায্য করে।</p>
+            <a href="#translator" class="btn btn-primary">ট্রান্সলেটর ব্যবহার করুন</a>
+        </div>
+        <div class="hero-image">
+            <img src="../static/images/logo.png" alt="Sign Language">
+        </div>
+    </div>
+</section>
+
+<section id="translator" class="translator-section">
+    <div class="container">
+        <h2 class="section-title">সাইন ভাষা ট্রান্সলেটর</h2>
+        
+        <div class="translator-container">
+            <div class="video-container">
+                <img id="video-feed" src="{{ url_for('video_feed') }}" alt="Video Feed">
+                <div class="prediction-overlay" id="prediction-display"></div>
+                <div class="controls">
+                    <button id="start-btn" class="btn btn-primary">
+                        <i class="fas fa-play"></i> শুরু করুন
+                    </button>
+                    <button id="stop-btn" class="btn btn-danger" disabled>
+                        <i class="fas fa-stop"></i> বন্ধ করুন
+                    </button>
+                </div>
+            </div>
+            <div class="translator-controls">
+                
+                <div class="sign-image-container">
+                    <h3>সাইন ইমেজ & অনুবাদ</h3>
+                    <div class="sign-image-box">
+                        <img id="sign-image" src="../static/images/favicon.png" alt="Sign Image">
+                    </div>
+                
+                <div class="prediction-container">
+                
+                    <div class="prediction-box" id="prediction-box">
+                        <span id="prediction-text">এখনো কোন অনুবাদ নেই</span>
+                    </div>
+                    <button id="speak-btn" class="btn btn-secondary" disabled>
+                        <i class="fas fa-volume-up"></i> উচ্চারণ করুন
+                    </button>
+                </div>
+            </div>
+                
+                <div class="prediction-history">
+                    <h3>সাম্প্রতিক অনুবাদ</h3>
+                    <ul id="prediction-history-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <h2 class="section-title">বৈশিষ্ট্য</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <h3>রিয়েল-টাইম অনুবাদ</h3>
+                <p>আমাদের AI সিস্টেম সাইন ভাষা রিয়েল-টাইমে চিনতে এবং অনুবাদ করতে পারে।</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <h3>টেক্সট-টু-স্পীচ</h3>
+                <p>অনুবাদিত টেক্সট সরাসরি উচ্চারণ করতে পারে, যা যোগাযোগকে আরও সহজ করে।</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>শিক্ষামূলক সংস্থান</h3>
+                <p>বাংলা সাইন ভাষা শেখার জন্য বিস্তৃত সংস্থান এবং টিউটোরিয়াল।</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>মোবাইল-বান্ধব</h3>
+                <p>যেকোনো ডিভাইসে ব্যবহার করতে পারেন - মোবাইল, ট্যাবলেট বা কম্পিউটার।</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/translator.js') }}"></script>
+{% endblock %}
