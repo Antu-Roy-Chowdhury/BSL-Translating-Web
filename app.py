@@ -331,4 +331,4 @@ if __name__ == '__main__':
     os.makedirs('static/images/signs', exist_ok=True)
     os.makedirs('static/data', exist_ok=True)
     
-    app.run(debug=True, threaded=True)
+    app.run(host='0.0.0.0', debug=True, threaded=True)
